@@ -1,0 +1,27 @@
+<div class="px-3 mb-3">
+    <h1>Chi Tiết Sách</h1>
+    <a style="margin: 1em;" routerLink="/" class="btn btn-primary float-end">Xem Danh Sách</a>
+</div>
+<div>
+    <hr />
+    <div class="row">
+        <dt class="col-sm-1">
+            Tên Sách:
+        </dt>
+        <dd class="col-sm-11">
+            {{book.title}}
+        </dd>
+        <dt class="col-sm-1">
+            Tác Giả:
+        </dt>
+        <dd class="col-sm-11">
+            {{book.author}}
+        </dd>
+        <dt class="row-cols-sm-1">
+            Mô Tả:
+        </dt>
+        <dd class="col-sm-11">
+            {{book.description}}
+        </dd>
+    </div>
+</div>

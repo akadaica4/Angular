@@ -1,0 +1,28 @@
+<h1>Xóa Sách</h1>
+<div>
+    <hr />
+    <div class="row">
+        <dt class="col-sm-1">
+          Tên Sách:
+      </dt>
+        <dd class="col-sm-11">
+            {{book.title}}
+        </dd>
+        <dt class="col-sm-1">
+          Tác Giả:
+      </dt>
+        <dd class="col-sm-11">
+            {{book.author}}
+        </dd>
+        <dt class="row-cols-sm-1">
+          Mô Tả:
+      </dt>
+        <dd class="col-sm-11">
+            {{book.description}}
+        </dd>
+    </div>
+</div>
+<div>
+    <button (click)="submitDelete()" class="btn btn-danger mx-1">Xóa Sách</button>
+    <button (click)="goBack()" class="btn btn-secondary mx-1">Thoát</button>
+</div>

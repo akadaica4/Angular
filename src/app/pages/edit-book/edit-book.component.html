@@ -1,0 +1,25 @@
+<h1>Cập Nhật Sách</h1>
+<form [formGroup]="form" (ngSubmit)="submit()">
+    <div class="form-group">
+        <label for="exampleFormControlinput1">Tên Sách</label>
+        <input formControlName="title" class="form-control" id="exampleFormControlTextarea1" rows="3">
+        <div *ngIf="control('title').invalid" class="text-danger">Vui lòng điền thông tin vào ô này</div>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Tác Giả</label>
+        <input formControlName="author" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Author's name">
+        <div *ngIf="control('author').invalid" class="text-danger">Vui lòng điền thông tin vào ô này</div>
+    </div>
+
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Mô Tả</label>
+        <textarea formControlName="description" type="number" class="form-control" id="exampleFormControlTextarea1" placeholder="Description"></textarea>
+        <div *ngIf="control('description').invalid" class="text-danger">Vui lòng điền thông tin vào ô này</div>
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary btn-block">Cập Nhật</button>
+        <a style="margin: 1em;" routerLink="/" class="btn btn-primary">Thoát</a>
+    </div>
+</form>
